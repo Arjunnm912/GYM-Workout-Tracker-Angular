@@ -1,0 +1,119 @@
+ <main>
+        <section>
+        <header class="w-full bg-black p-4">
+            <img class=" w-40" src="assets/img/gymlogo.svg" alt="logo">
+        </header>
+        </section>
+        <section>
+        <div class="py-3 md:w-1/2 inset-shadow-2xs mx-auto shadow-sm flex  justify-center rounded">
+            <div class="workout-main-bx p-3">
+          <h2 class="text-center">🏋️Day-wise Data Entry</h2>
+          <!-- <div class="form-group">
+            <label>Select Date</label>
+            <input type="date" placeholder="Select Date" id="workoutDateInput" onchange="loadWorkout()">
+          </div> -->
+          <div class="flex  overflow-y-scroll ">
+            <h6>May</h6>
+            <div class="calender-box">
+                <span>Sat</span>
+                <span>26</span>
+            </div>
+          </div>
+          <div  id="Custom-Calender-Container"></div>
+<div class="radio-inputs" id="WorkoutGroupRadioButtonGrp">
+
+</div>
+
+
+
+
+
+                <div class=" mt-5 workout-single-bx rounded p-3">
+                    <h6 class="text-center">Bench Press</h6>
+                    <div class="flex gap-3">
+                        <div class="form-group">
+                            <label class="text-center">Weight</label>
+                            <input type="number" placeholder="Weight" class="">
+                        </div>
+                         <div class="form-group">
+                            <label class="text-center">Rep</label>
+                            <input type="number" placeholder="Rep" class="">
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                    <button class="border flex gap-1 items-center mt-3 bg-black rounded text-white text-sm px-3 py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.25 21v-4.765a1.59 1.59 0 0 0-1.594-1.588H9.344a1.59 1.59 0 0 0-1.594 1.588V21m8.5-17.715v2.362a1.59 1.59 0 0 1-1.594 1.588H9.344A1.59 1.59 0 0 1 7.75 5.647V3m8.5.285A3.2 3.2 0 0 0 14.93 3H7.75m8.5.285c.344.156.661.374.934.645l2.382 2.375A3.17 3.17 0 0 1 20.5 8.55v9.272A3.18 3.18 0 0 1 17.313 21H6.688A3.18 3.18 0 0 1 3.5 17.823V6.176A3.18 3.18 0 0 1 6.688 3H7.75"/></svg>
+                        Save
+                    </button>
+                    </div>
+
+                </div>
+                  <div class=" mt-5 workout-single-bx rounded p-3">
+                    <h6 class="text-center">Overhead Press</h6>
+                    <div class="flex gap-3">
+                        <div class="form-group">
+                            <label class="text-center">Weight</label>
+                            <input type="number" placeholder="Weight" class="">
+                        </div>
+                         <div class="form-group">
+                            <label class="text-center">Rep</label>
+                            <input type="number" placeholder="Rep" class="">
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                    <button class="border flex gap-1 items-center mt-3 bg-black rounded text-white text-sm px-3 py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.25 21v-4.765a1.59 1.59 0 0 0-1.594-1.588H9.344a1.59 1.59 0 0 0-1.594 1.588V21m8.5-17.715v2.362a1.59 1.59 0 0 1-1.594 1.588H9.344A1.59 1.59 0 0 1 7.75 5.647V3m8.5.285A3.2 3.2 0 0 0 14.93 3H7.75m8.5.285c.344.156.661.374.934.645l2.382 2.375A3.17 3.17 0 0 1 20.5 8.55v9.272A3.18 3.18 0 0 1 17.313 21H6.688A3.18 3.18 0 0 1 3.5 17.823V6.176A3.18 3.18 0 0 1 6.688 3H7.75"/></svg>
+                        Save
+                    </button>
+                    </div>
+
+                </div>
+                  <div class=" mt-5 workout-single-bx rounded p-3">
+                    <h6 class="text-center"> Incline Dumbbell Press </h6>
+                    <div class="flex gap-3">
+                        <div class="form-group">
+                            <label class="text-center">Weight</label>
+                            <input type="number" placeholder="Weight" class="">
+                        </div>
+                         <div class="form-group">
+                            <label class="text-center">Rep</label>
+                            <input type="number" placeholder="Rep" class="">
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                    <button class="border flex gap-1 items-center mt-3 bg-black rounded text-white text-sm px-3 py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.25 21v-4.765a1.59 1.59 0 0 0-1.594-1.588H9.344a1.59 1.59 0 0 0-1.594 1.588V21m8.5-17.715v2.362a1.59 1.59 0 0 1-1.594 1.588H9.344A1.59 1.59 0 0 1 7.75 5.647V3m8.5.285A3.2 3.2 0 0 0 14.93 3H7.75m8.5.285c.344.156.661.374.934.645l2.382 2.375A3.17 3.17 0 0 1 20.5 8.55v9.272A3.18 3.18 0 0 1 17.313 21H6.688A3.18 3.18 0 0 1 3.5 17.823V6.176A3.18 3.18 0 0 1 6.688 3H7.75"/></svg>
+                        Save
+                    </button>
+                    </div>
+
+                </div>
+                <div class=" mt-5 workout-single-bx rounded p-3">
+                    <h6 class="text-center">  Dumbbell Lateral Raises </h6>
+                    <div class="flex gap-3">
+                        <div class="form-group">
+                            <label class="text-center">Weight</label>
+                            <input type="number" placeholder="Weight" class="">
+                        </div>
+                         <div class="form-group">
+                            <label class="text-center">Rep</label>
+                            <input type="number" placeholder="Rep" class="">
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                    <button class="border flex gap-1 items-center mt-3 bg-black rounded text-white text-sm px-3 py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.25 21v-4.765a1.59 1.59 0 0 0-1.594-1.588H9.344a1.59 1.59 0 0 0-1.594 1.588V21m8.5-17.715v2.362a1.59 1.59 0 0 1-1.594 1.588H9.344A1.59 1.59 0 0 1 7.75 5.647V3m8.5.285A3.2 3.2 0 0 0 14.93 3H7.75m8.5.285c.344.156.661.374.934.645l2.382 2.375A3.17 3.17 0 0 1 20.5 8.55v9.272A3.18 3.18 0 0 1 17.313 21H6.688A3.18 3.18 0 0 1 3.5 17.823V6.176A3.18 3.18 0 0 1 6.688 3H7.75"/></svg>
+                        Save
+                    </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </section>
+
+
+
+
+    </main>
