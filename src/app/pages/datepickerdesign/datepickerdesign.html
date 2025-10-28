@@ -1,0 +1,21 @@
+<div class="month-header">
+  <button (click)="changeMonth(-1)">←</button>
+  <div class="month-title">{{ monthNames[currentMonth] }} {{ currentYear }}</div>
+  <button (click)="changeMonth(1)">→</button>
+</div>
+
+<div class="date-container flex overflow-scroll">
+  <div
+    *ngFor="let day of days"
+    class="date-box"
+    [class.today]="isToday(day)"
+    [class.selected]="isSelected(day)"
+    (click)="selectDate(day)"
+  >
+    {{ day.getDate() }}
+  </div>
+</div>
+
+<p class="selected-info " >
+  {{ selectedDate ? ('Selected: ' + (selectedDate | date:'dd MMM yyyy')) : 'No date selected' }}
+</p>

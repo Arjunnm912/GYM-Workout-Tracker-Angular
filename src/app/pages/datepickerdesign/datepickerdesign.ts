@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule, DatePipe } from '@angular/common';
+
 @Component({
-  selector: 'app-workout-track-ing-page',
+  selector: 'app-datepickerdesign',
+  standalone: true,
   imports: [CommonModule, DatePipe],
-  templateUrl: './workout-track-ing-page.html',
-  styleUrl: './workout-track-ing-page.scss',
+  templateUrl: './datepickerdesign.html',
+  styleUrl: './datepickerdesign.scss',
 })
-export class WorkoutTrackIngPage implements OnInit {
+export class Datepickerdesign implements OnInit {
 //#region Date show box --- show and pick dates----
     monthNames = [
     'January', 'February', 'March', 'April', 'May', 'June',
