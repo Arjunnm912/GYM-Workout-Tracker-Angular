@@ -58,10 +58,10 @@ input[type=number] {
 /* From Uiverse.io by Pankaj-Meharchandani */
 .radio-inputs {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  justify-content: center;
-  align-items: center;
-  max-width: 100%; /* Ensure it doesn't overflow */
+  // flex-direction: column; /* Stack elements vertically */
+  // justify-content: center;
+  // align-items: center;
+  // max-width: 100%; /* Ensure it doesn't overflow */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -195,6 +195,11 @@ input[type=number] {
   }
 }
 .date-container{
+  scroll-behavior: smooth;
+   cursor: grab;
+   &:active{
+    cursor: grabbing;
+   }
   .date-box{
     &.today{
       background-color: #2260ff;
